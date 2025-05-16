@@ -16,8 +16,8 @@ def merge_sort(head):
     mid = slow.next
     slow.next = None
 
-    merge_sort(head)
-    merge_sort(mid)
+    left = merge_sort(head)
+    right = merge_sort(mid)
 
     dummy = ListNode()
     curr = dummy
